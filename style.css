@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #2c3e50, #4ca1af);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator {
+    background: #1e272e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    width: 350px;
+}
+
+/* Display Screen */
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    background: #2f3640;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Design */
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #485460;
+    color: white;
+    transition: background 0.3s;
+}
+
+/* Hover Effects */
+button:hover {
+    background-color: #596275;
+}
+
+/* Special Buttons */
+button:nth-child(1) { background-color: #ff4d4d; } /* Clear */
+button:nth-child(2) { background-color: #ff9f43; } /* Backspace */
+button:nth-child(16) { background-color: #4cd137; } /* Equals */
+
+button:nth-child(1):hover { background-color: #ff3333; }
+button:nth-child(2):hover { background-color: #ffc048; }
+button:nth-child(16):hover { background-color: #44bd32; }
